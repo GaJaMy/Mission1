@@ -1,0 +1,40 @@
+.index span:nth-child(n+2) {
+    position: relative;
+    margin-left: 5px;
+    padding-left: 10px;
+}
+
+.index span:nth-child(n+2)::after {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: black;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #444444;
+    padding: 10px;
+    text-align: center;
+}
+
+thead tr {
+    background-color: green;
+    color: white;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: white;
+}
+
+tbody tr:nth-child(2n + 1) {
+    background-color: wheat;
+}
